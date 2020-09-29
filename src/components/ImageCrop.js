@@ -11,7 +11,7 @@ const ImageCrop = ({imageSrc}) => {
         src={imageSrc}
         crop={crop}
         onChange={newCrop => setCrop(newCrop)}
-        onComplete={crop => console.log(crop)} //the cropped part of the image would be exported here
+        onComplete={crop => console.log(crop)} //export the cropped part of the image here
         imageAlt='main'
       />
     </div>
