@@ -1,12 +1,12 @@
 import React from 'react';
-import ImageCropper from './components/ImageCropper'
+import ImageCrop from './components/ImageCrop'
 import './App.css';
-import couch from './couch.png'
+import couch from './assets/couch.png'
 
 function App() {
   return (
     <div>
-      <ImageCropper imageSrc={couch} />
+      <ImageCrop imageSrc={couch} />
     </div>
   );
 }
