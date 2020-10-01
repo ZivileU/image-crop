@@ -15,17 +15,41 @@
   box-shadow: 0 0 0 9999em rgba(255, 255, 255, 0.4);
   border: 2px solid rgb(72, 198, 186);
   border-image-source: none;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
-.ReactCrop__crop-selection::after {
-  content: ' ';
+.ReactCrop__drag-handle::after {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.ReactCrop__drag-handle {
   position: absolute;
-  border: 2px solid rgb(72, 198, 186);
-  border-radius: 10px;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  z-index: -1;
+  width: 20px;
+  height: 20px;
+  background-image: url(../assets/corner.svg);
+  background-size: contain;
+}
+
+.ReactCrop .ord-nw {
+  top: -12px;
+  left: -12px;
+  transform: rotate(-90deg);
+}
+
+.ReactCrop .ord-ne {
+  top: -12px;
+  right: -12px;
+}
+
+.ReactCrop .ord-se {
+  bottom: -12px;
+  right: -12px;
+  transform: rotate(90deg);
+}
+
+.ReactCrop .ord-sw {
+  bottom: -12px;
+  left: -12px;
+  transform: rotate(180deg);
 }
